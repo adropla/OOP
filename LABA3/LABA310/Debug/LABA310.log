@@ -1,0 +1,4 @@
+﻿  LABA310.cpp
+c:\users\adropla\desktop\универ\2 семестр\ооп\laba3\laba310\laba310.cpp(20): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\adropla\desktop\универ\2 семестр\ооп\laba3\laba310\laba310.cpp(22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  LABA310.vcxproj -> C:\Users\adropla\Desktop\Универ\2 семестр\ООП\LABA3\Debug\LABA310.exe
