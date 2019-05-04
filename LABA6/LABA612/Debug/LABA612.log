@@ -1,0 +1,4 @@
+﻿  LABA612.cpp
+c:\users\adropla\desktop\универ\2 семестр\ооп\laba5\fraction.h(16): warning C4838: преобразование из "int" в "SHORT" требует сужающего преобразования
+c:\users\adropla\desktop\универ\2 семестр\ооп\laba6\laba612\laba612.cpp(82): warning C4018: <: несоответствие типов со знаком и без знака
+  LABA612.vcxproj -> C:\Users\adropla\Desktop\Универ\2 семестр\ООП\LABA6\Debug\LABA612.exe

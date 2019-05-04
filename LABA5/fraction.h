@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <stdlib.h>
 using namespace std;
+
 string removeSpaces(string str)
 {
 	str.erase(remove(str.begin(), str.end(), ' '), str.end());
@@ -21,9 +22,11 @@ class fraction {
 public:
 	int num;
 	int den;
+
 	fraction(int a, int b) { num = a; den = b; };
 	fraction() : fraction(0, 0) { num = 0, den = 0; };
-	void getFraction() {
+
+	void setFraction() {
 		char dump;
 		cin >> num >> dump >> den;
 		if (cin.fail()) {
@@ -33,36 +36,39 @@ public:
 			exit(0);
 		}
 	};
-	void setFraction(int numerator, int denominator) {
-		num = numerator; den = denominator;
-	}
+
 	string displayFraction() {
 		return to_string(num) + "/" + to_string(den);
 	};
+
 	static fraction addFraction(fraction a, fraction b) {
 		fraction result;
 		result.num = a.num*b.den + b.num*a.den;
 		result.den = a.den*b.den;
 		return result;
 	};
+
 	static fraction subFraction(fraction a, fraction b) {
 		fraction result;
 		result.num = a.num*b.den - b.num*a.den;
 		result.den = a.den*b.den;
 		return result;
 	};
+
 	static fraction mulFraction(fraction a, fraction b) {
 		fraction result;
 		result.num = a.num*b.num;
 		result.den = a.den*b.den;
 		return result;
 	};
+
 	static fraction divFraction(fraction a, fraction b) {
 		fraction result;
 		result.num = a.num*b.den;
 		result.den = a.den*b.num;
 		return result;
 	};
+
 	static fraction fractionSimplification(fraction a) {
 		fraction fResult;
 		long tnum, tden, temp, gcd;
